@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block body %}
+    <div class="container">
+        <div class="page-header">
+            <div class="row">
+                <div class="list-group">
+                    <a class="list-group-item active"><h4 class="list-group-item-heading">Register</h4></a>
+                </div>
+                <div class="col-md-6">
+                    {{ wtf.quick_form(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

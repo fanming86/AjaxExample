@@ -1,0 +1,18 @@
+python <<EOF
+import json
+import socket
+import time
+import psutil as pu
+mem = pu.virtual_memory()
+mem_open = open('/proc/meminfo')
+Info = {}
+Info['Time'] = str(int(time.time()) + 8 * 3600)
+Info['Host'] =  socket.gethostname()
+Info['MemFree'] = mem.free/1024/1024
+Info['MemTotal'] = mem.total/1024/1024
+Info['MemUsage'] = mem.total/1024/1024 - mem.free/1024/1024
+Info['LoadAvg'] = ','.join(open('/proc/loadavg').read().split()[:3])
+
+data = json.dumps(Info)
+print(data)
+EOF
