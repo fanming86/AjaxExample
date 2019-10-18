@@ -9,7 +9,7 @@ colorama==0.3.9
 decorator==4.1.2
 dominate==2.2.1
 emit==0.4.0
-Flask==0.11.1
+Flask==1.0
 Flask-Admin==1.5.0
 Flask-Bootstrap==3.3.7.0
 Flask-FlatPages==0.6
