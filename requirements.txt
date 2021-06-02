@@ -30,7 +30,7 @@ itsdangerous==0.24
 Jinja2==2.8
 Mako==1.0.4
 Markdown==2.6.10
-markdown2==2.3.5
+markdown2==2.4.0
 MarkupSafe==0.23
 mock==2.0.0
 mongoengine==0.15.0
