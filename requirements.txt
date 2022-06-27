@@ -35,7 +35,7 @@ MarkupSafe==0.23
 mock==2.0.0
 mongoengine==0.15.0
 mysql==0.0.1
-mysql-connector-python==8.0.5
+mysql-connector-python==8.0.14
 MySQL-python==1.2.5
 pbr==3.1.1
 pluggy==0.6.0
